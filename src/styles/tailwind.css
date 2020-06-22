@@ -1,5 +1,11 @@
 @tailwind base;
 
+@font-face {
+  font-family: ogg;
+  font-weight: 400;
+  src: url(/styles/ogg-regular.woff) format("woff");
+}
+
 @tailwind components;
 
 @tailwind utilities;

@@ -1,8 +1,13 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        yantramanav: ["Yantramanav", "sans-serif"],
+        ogg: ["Ogg", "serif"],
+      },
+    },
   },
   variants: {},
   plugins: [],
-}
+};
