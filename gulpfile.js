@@ -189,7 +189,7 @@ function cssProduction() {
 
 // HTML processing – copies over HTML files
 function htmlProduction() {
-  return src("dev/*.html").pipe(dest("public"));
+  return src("dev/**/*.html").pipe(dest("public"));
 }
 
 // Javascript processing – uglifies / minimises javascript
