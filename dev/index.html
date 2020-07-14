@@ -6,7 +6,7 @@
 
     <!-- Insert "head-links.njk" partial -->
     <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href="styles/tailwind.css"/>
+<link rel="stylesheet" href="/styles/tailwind.css"/>
     <!-- Insert "head-links.njk" partial -->
 
     <title>Other Worlds</title>
@@ -16,25 +16,27 @@
     <div
       class="flex lg:h-screen pt-4 px-4 sm:pt-12 sm:px-12 mb-4 lg:mb-8 border-b border-black border-solid"
     >
-      <div
+      <!-- Insert "head-links.njk" partial -->
+            <header
         class="w-1/3 lg:w-1/2 flex flex-col lg:justify-between lg:border-r lg:border-black lg:border-solid"
       >
-        <header class="w-3/4 lg:w-1/2 mb-4">
+        <div class="w-3/4 lg:w-1/2 mb-4">
           <h1>
-            <a href="#"
+            <a href="/"
               ><img src="/img/logo.gif" alt="Other Worlds Zine Collective"
             /></a>
           </h1>
-        </header>
+        </div>
 
         <nav class="w-3/4">
           <ul class="sm:text-2xl lg:text-4xl xl:text-5xl font-ogg">
             <li class="mb-4"><a href="#">About</a></li>
-            <li class="mb-4"><a href="#">Zine Fair</a></li>
+            <li class="mb-4"><a href="/zinefair">Zine Fair</a></li>
             <li class="mb-4"><a href="#">Subscription service</a></li>
           </ul>
         </nav>
-      </div>
+      </header>
+      <!-- Insert "head-links.njk" partial -->
 
       <section
         class="text-xl sm:text-3xl xl:text-4xl leading-tight w-2/3 lg:w-1/2 flex items-end justify-end"
