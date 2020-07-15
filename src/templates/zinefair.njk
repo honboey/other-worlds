@@ -12,20 +12,42 @@
   </head>
 
   <body class="font-yantramanav bg-ow-cream">
-    <div
-      class="flex lg:h-screen pt-4 px-4 sm:pt-12 sm:px-12 mb-4 lg:mb-8 border-b border-black border-solid"
-    >
-      <!-- Insert "head-links.njk" partial -->
-      {% include "header.njk" %}
-      <!-- Insert "head-links.njk" partial -->
+    <div class="flex flex-col lg:flex-row border-black border-b">
+      <header
+        class="lg:w-1/2 flex lg:flex-col lg:justify-between lg:border-r lg:border-black lg:border-solid pt-4 px-4 sm:pt-12 sm:px-12 lg:h-screen"
+      >
+        <div class="w-1/6 lg:w-1/2 mb-4">
+          <h1>
+            <a href="/"
+              ><img src="/img/logo.gif" alt="Other Worlds Zine Collective"
+            /></a>
+          </h1>
+        </div>
 
-      <section>
+        <nav class="w-5/6">
+          <ul
+            class="flex lg:block justify-between pl-6 lg:p-0 sm:text-2xl lg:text-4xl xl:text-5xl font-ogg"
+          >
+            <li class="mb-4"><a href="#">About</a></li>
+            <li class="mb-4"><a href="/zinefair">Zine Fair</a></li>
+            <li class="mb-4"><a href="#">Subscription service</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="flex flex-col justify-end">
         <img
           src="/img/zine-fair.jpg"
           alt="Lots of people at the Other Worlds Zine Fair"
+          class="h-full object-cover"
         />
-        <h1>The Other Worlds Zine Fair</h1>
-      </section>
+        <div class="lg:flex lg:justify-end border-black border-t">
+          <h2
+            class="sm:text-2xl lg:text-4xl xl:text-5xl font-ogg py-4 lg:w-11/12"
+          >
+            Other Worlds Zine Fair
+          </h2>
+        </div>
+      </div>
     </div>
 
     <div>
