@@ -8,67 +8,53 @@
     {% include "head-links.njk" %}
     <!-- Insert "head-links.njk" partial -->
 
-    <title>Other Worlds – Zine Fair</title>
+    <title>Other Worlds Zine Fair</title>
   </head>
 
   <body class="font-yantramanav bg-ow-cream">
-    <div class="flex flex-col lg:flex-row border-black border-b">
-      <header
-        class="lg:w-1/2 flex lg:flex-col lg:justify-between lg:border-r lg:border-black lg:border-solid pt-4 px-4 sm:pt-12 sm:px-12 lg:h-screen"
-      >
-        <div class="w-1/6 lg:w-1/2 mb-4">
-          <h1>
-            <a href="/"
-              ><img src="/img/logo.gif" alt="Other Worlds Zine Collective"
-            /></a>
-          </h1>
-        </div>
+    <div class="flex lg:h-screen border-b border-black border-solid">
+      <!-- Insert "header.njk" partial -->
+      {% include "header.njk" %}
+      <!-- Insert "header.njk" partial -->
 
-        <nav class="w-5/6">
-          <ul
-            class="flex lg:block justify-between pl-6 lg:p-0 sm:text-2xl lg:text-4xl xl:text-5xl font-ogg"
-          >
-            <li class="mb-4"><a href="#">About</a></li>
-            <li class="mb-4 underline"><a href="/zinefair">Zine Fair</a></li>
-            <li class="mb-4"><a href="#">Subscription service</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="flex flex-col justify-end lg:w-1/2">
-        <img
-          src="/img/zine-fair.jpg"
-          alt="Lots of people at the Other Worlds Zine Fair"
-          class="h-full object-cover"
-        />
-        <div class="lg:flex lg:justify-end border-black border-t">
-          <section
-            class="text-xl sm:text-3xl xl:text-4xl leading-tight lg:w-11/12 px-4 py-8 pr-4 lg:pr-8"
-          >
-            <p class="mb-4 lg:mb-8">
-              The Other Worlds Zine Fair is an annual zine fair in Sydney
-              (Australia) on the last Sunday of May. Now in its 7th year, it
-              attracts over 100 stall holders and 200 attendees.
-            </p>
-            <p>
-              The zine fair was born out of
-              <a
-                href="https://www.theguardian.com/commentisfree/2014/mar/11/sydney-biennale-boycott-victory-shows-that-divestment-works"
-                class="underline"
-                >the 2014 Sydney Biennale boycotts</a
-              >. These boycotts formed in protest against Australia’s policy of
-              mandatory detention of refugees and asylum seekers.
-            </p>
-          </section>
+      <section
+        class="text-xl sm:text-3xl xl:text-4xl leading-tight w-2/3 lg:w-1/2 flex items-end justify-end pt-4 sm:pt-12 pr-4 sm:pr-12"
+      >
+        <div class="w-11/12">
+          <p class="mb-4 lg:mb-8">
+            The Other Worlds Zine Fair is an annual zine fair in Sydney
+            (Australia) on the last Sunday of May. Now in its 7th year, it
+            attracts over 100 stall holders and 200 attendees.
+          </p>
+          <p class="mb-4 lg:mb-8">
+            The zine fair was born out of
+            <a
+              href="https://www.theguardian.com/commentisfree/2014/mar/11/sydney-biennale-boycott-victory-shows-that-divestment-works"
+              class="underline"
+              >the 2014 Sydney Biennale boycotts</a
+            >. These boycotts formed in protest against Australia’s policy of
+            mandatory detention of refugees and asylum seekers.
+          </p>
         </div>
-      </div>
+      </section>
     </div>
 
-    <div class="px-4 lg:px-12 flex flex-col lg:flex-row border-black border-b">
-      <section
-        class="text-xl sm:text-3xl xl:text-4xl leading-tight lg:w-1/2 border-black lg:border-r pt-8"
+    <img
+      src="/img/zine-fair02.jpg"
+      alt="Lots of people at the Other Worlds Zine Fair"
+      class="object-cover w-full"
+    />
+
+    <div
+      class="flex flex-col lg:flex-row px-4 sm:px-12 border-black border-b text-lg md:text-2xl xl:text-3xl"
+    >
+      <div
+        class="lg:w-1/2 lg:flex border-black border-b lg:border-b-0 lg:border-r pt-4 lg:pt-12"
       >
-        <div class="lg:w-11/12">
-          <h2 class="font-ogg mb-4 lg:mb-8">Applying for a table</h2>
+        <section class="lg:w-11/12">
+          <h2 class="font-ogg text-2xl md:text-4xl xl:text-5xl mb-4">
+            Applying for a table
+          </h2>
           <p class="mb-4 lg:mb-8">
             Applications for the 2021 Zine Fair open in January 2021. Follow
             <a
@@ -78,18 +64,22 @@
             >
             for updates and news.
           </p>
-          <button class="bg-gray-500 p-2 font-ogg text-ow-cream mb-4 lg:mb-8">
-            Applications open in January 2021
-          </button>
-        </div>
-      </section>
+          <a href="#"
+            ><button
+              class="bg-gray-600 p-2 font-ogg text-gray-500 mb-4 lg:mb-8"
+            >
+              Applications open in January 2021
+            </button></a
+          >
+        </section>
+      </div>
 
-      <section
-        class="text-xl sm:text-3xl xl:text-4xl leading-tight lg:w-1/2 flex flex-col lg:flex-row justify justify-end py-8"
-      >
-        <div class="lg:w-11/12">
-          <h2 class="font-ogg mb-4 lg:mb-8">The online fair</h2>
-          <p>
+      <div class="lg:w-1/2 lg:flex lg:justify-end pt-4 lg:pt-12">
+        <section class="lg:w-11/12">
+          <h2 class="font-ogg text-2xl md:text-4xl xl:text-5xl mb-4">
+            The online fair
+          </h2>
+          <p class="mb-4 lg:mb-8">
             In 2020, because of COVID-19, we replaced our in-person fair with a
             virtual one. You can
             <a
@@ -99,12 +89,12 @@
             >. Make sure you don’t miss Plastic Rupert’s 5 hour concert in the
             virtual bathrooms!
           </p>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
 
-    <!-- Insert "footer.njk" partial -->
+    <!-- insert footer.njk -->
     {% include "footer.njk" %}
-    <!-- Insert "footer.njk" partial -->
+    <!-- insert footer.njk -->
   </body>
 </html>
