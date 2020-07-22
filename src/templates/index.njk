@@ -12,105 +12,110 @@
   </head>
 
   <body class="font-yantramanav bg-ow-cream">
-    <div class="flex lg:h-screen border-b border-black border-solid">
-      <!-- Insert "header.njk" partial -->
-      {% include "header.njk" %}
-      <!-- Insert "header.njk" partial -->
+    <main id="swup" class="trans-fade">
+      <div class="flex lg:h-screen border-b border-black border-solid">
+        <!-- Insert "header.njk" partial -->
+        {% include "header.njk" %}
+        <!-- Insert "header.njk" partial -->
+        <section
+          class="text-xl sm:text-3xl xl:text-4xl leading-tight w-2/3 lg:w-1/2 flex items-end justify-end pt-4 sm:pt-12 pr-4 sm:pr-12"
+        >
+          <div class="w-11/12">
+            <p class="mb-4 lg:mb-8">
+              Other Worlds is a zine collective based in Australia. Every May we
+              hold an annual zine fair in Sydney. We also run a quarterly postal
+              subscription service.
+            </p>
+            <p class="mb-4 lg:mb-8">
+              Other Worlds has been collectively organised since 2014. We are a
+              progressive organisation that hopes to provide a space for
+              marginalised voices. The Other Worlds Zine Fair takes place on the
+              stolen lands of the Gadigal and Wangal people of the Darug nation.
+            </p>
+          </div>
+        </section>
+      </div>
 
       <section
-        class="text-xl sm:text-3xl xl:text-4xl leading-tight w-2/3 lg:w-1/2 flex items-end justify-end pt-4 sm:pt-12 pr-4 sm:pr-12"
+        class="border-b border-black border-solid leading-tight flex flex-col lg:flex-row pb-4 lg:pb-0"
       >
-        <div class="w-11/12">
-          <p class="mb-4 lg:mb-8">
-            Other Worlds is a zine collective based in Australia. Every May we
-            hold an annual zine fair in Sydney. We also run a quarterly postal
-            subscription service.
-          </p>
-          <p class="mb-4 lg:mb-8">
-            Other Worlds has been collectively organised since 2014. We are a
-            progressive organisation that hopes to provide a space for
-            marginalised voices. The Other Worlds Zine Fair takes place on the
-            stolen lands of the Gadigal and Wangal people of the Darug nation.
-          </p>
+        <img
+          src="/img/zines.jpg"
+          alt="A collection of zines"
+          class="lg:w-1/2 h-auto object-cover"
+        />
+        <div
+          class="lg:w-1/2 lg:flex lg:justify-end mt-4 sm:mt-12 px-4 sm:px-12 lg:pr-0 lg:pr-12"
+        >
+          <div class="lg:w-11/12 text-lg md:text-2xl xl:text-3xl">
+            <h2 class="font-ogg text-2xl md:text-4xl xl:text-5xl mb-4">
+              Subscription service
+            </h2>
+            <p class="mb-4 lg:mb-8">
+              The Other Worlds Subscription Quaterly Annual Mailout (SQAM) is a
+              zine subscription service. Every three months we post a curated
+              pack of zines loosely collected around a theme. There will be four
+              packs in total.
+            </p>
+            <p class="mb-4 lg:mb-8">
+              The first pack drops in August 2020 and is titled “City as Might
+              Have Been”.
+            </p>
+            <p class="mb-4 lg:mb-8">
+              Subscriptions are AUD$80 and are currently open. Limited to 50
+              subscribers.
+            </p>
+            <a href="#"
+              ><button class="bg-black p-2 font-ogg text-ow-cream">
+                Subscribe
+              </button></a
+            >
+          </div>
         </div>
       </section>
-    </div>
 
-    <section
-      class="border-b border-black border-solid leading-tight flex flex-col lg:flex-row pb-4 lg:pb-0"
-    >
-      <img
-        src="/img/zines.jpg"
-        alt="A collection of zines"
-        class="lg:w-1/2 h-auto object-cover"
-      />
-      <div
-        class="lg:w-1/2 lg:flex lg:justify-end mt-4 sm:mt-12 px-4 sm:px-12 lg:pr-0 lg:pr-12"
+      <section
+        class="border-b border-black border-solid leading-tight flex flex-col lg:flex-row lg:flex-row-reverse"
       >
-        <div class="lg:w-11/12 text-lg md:text-2xl xl:text-3xl">
+        <div class="lg:w-1/2">
+          <img
+            src="/img/zine-fair.jpg"
+            alt="Lots of people at the Other Worlds Zine Fair"
+            class="h-full object-cover"
+          />
+        </div>
+        <div
+          class="lg:w-1/2 text-lg md:text-2xl xl:text-3xl mt-4 sm:mt-12 px-4 sm:px-12 pb-4 lg:pb-12"
+        >
           <h2 class="font-ogg text-2xl md:text-4xl xl:text-5xl mb-4">
-            Subscription service
+            The Other Worlds Zine Fair
           </h2>
-          <p class="mb-4 lg:mb-8">
-            The Other Worlds Subscription Quaterly Annual Mailout (SQAM) is a
-            zine subscription service. Every three months we post a curated pack
-            of zines loosely collected around a theme. There will be four packs
-            in total.
+          <p class="mb-4">
+            On the last Sunday of May we hold the Other Worlds Zine Fair in
+            Sydney, Australia. Now in its 7th year, it attracts over 100 stall
+            holders and 200 attendees.
           </p>
-          <p class="mb-4 lg:mb-8">
-            The first pack drops in August 2020 and is titled “City as Might
-            Have Been”.
+          <p class="mb-4">
+            The zine fair was born out of the 2014 Biennale boycotts of
+            Transfield (the service providers for Australia’s offshore
+            immigration detention centres).
           </p>
-          <p class="mb-4 lg:mb-8">
-            Subscriptions are AUD$80 and are currently open. Limited to 50
-            subscribers.
-          </p>
-          <a href="#"
+          <p class="mb-4">Applications open in Jan 2021</p>
+          <a href="/zinefair"
             ><button class="bg-black p-2 font-ogg text-ow-cream">
-              Subscribe
+              Learn more
             </button></a
           >
         </div>
-      </div>
-    </section>
-
-    <section
-      class="border-b border-black border-solid leading-tight flex flex-col lg:flex-row lg:flex-row-reverse"
-    >
-      <div class="lg:w-1/2">
-        <img
-          src="/img/zine-fair.jpg"
-          alt="Lots of people at the Other Worlds Zine Fair"
-          class="h-full object-cover"
-        />
-      </div>
-      <div
-        class="lg:w-1/2 text-lg md:text-2xl xl:text-3xl mt-4 sm:mt-12 px-4 sm:px-12 pb-4 lg:pb-12"
-      >
-        <h2 class="font-ogg text-2xl md:text-4xl xl:text-5xl mb-4">
-          The Other Worlds Zine Fair
-        </h2>
-        <p class="mb-4">
-          On the last Sunday of May we hold the Other Worlds Zine Fair in
-          Sydney, Australia. Now in its 7th year, it attracts over 100 stall
-          holders and 200 attendees.
-        </p>
-        <p class="mb-4">
-          The zine fair was born out of the 2014 Biennale boycotts of Transfield
-          (the service providers for Australia’s offshore immigration detention
-          centres).
-        </p>
-        <p class="mb-4">Applications open in Jan 2021</p>
-        <a href="/zinefair"
-          ><button class="bg-black p-2 font-ogg text-ow-cream">
-            Learn more
-          </button></a
-        >
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Insert "footer.njk" partial -->
     {% include "footer.njk" %}
     <!-- Insert "footer.njk" partial -->
+
+    <!-- Insert "scripts-links.njk" partial -->
+    {% include "scripts-links.njk" %}
+    <!-- Insert "scripts-links.njk" partial -->
   </body>
 </html>

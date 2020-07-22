@@ -6,6 +6,15 @@
   src: url(/styles/ogg-regular.woff) format("woff");
 }
 
+.trans-fade {
+  transition: 1s;
+  opacity: 1;
+}
+
+html.is-animating .trans-fade {
+  opacity: 0;
+}
+
 @tailwind components;
 
 @tailwind utilities;
