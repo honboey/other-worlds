@@ -232,8 +232,11 @@ I am a Camera is a zine series by Vanessa Berry, started in 1999. This issue, fr
           // a successful payment.
           // Instead use one of the strategies described in
           // https://stripe.com/docs/payments/checkout/fulfill-orders
-          successUrl: window.location.protocol + '//otherworldszines.com/success',
-          cancelUrl: window.location.protocol + '//otherworldszines.com/canceled',
+          successUrl: window.location.protocol + '//otherworldszines.com/checkout-confirmation',
+          cancelUrl: window.location.protocol + '//otherworldszines.com/checkout-error',
+          shippingAddressCollection: {
+            allowedCountries: ['AU'],
+          }
         })
         .then(function (result) {
           if (result.error) {
