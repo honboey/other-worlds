@@ -58,12 +58,12 @@
             Might Have Been”.
           </p>
           <p class="mb-4 lg:mb-8">
-            Subscriptions are AUD$80 and are currently open. Limited to 50 subscribers. 
+            Subscriptions are AUD$82 and are currently open. Limited to 50 subscribers. 
           </p>
           <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
 <button
 class="bg-black p-2 font-ogg text-ow-cream mb-4 lg:mb-8"
-id="checkout-button-price_1HmY13BXFuy4q8miLG09OPmM"
+id="checkout-button-price_1HtLgZBXFuy4q8miDvdzP610"
 role="link"
 type="button"
 >
@@ -219,39 +219,35 @@ I am a Camera is a zine series by Vanessa Berry, started in 1999. This issue, fr
 
     <div id="error-message"></div>
 
-    <script>
-    (function() {
-      var stripe = Stripe('pk_live_51HmXXKBXFuy4q8mimdr4WZeKlTJOQ9xBQo74FbYriEIqE7JpN4TUL3EATc6ufzKMtYqSPxfr3nYHLQBEtg3ke1zB00XOcpeA3r');
-    
-      var checkoutButton = document.getElementById('checkout-button-price_1HmY13BXFuy4q8miLG09OPmM');
-      checkoutButton.addEventListener('click', function () {
-        // When the customer clicks on the button, redirect
-        // them to Checkout.
-        stripe.redirectToCheckout({
-          lineItems: [{price: 'price_1HmY13BXFuy4q8miLG09OPmM', quantity: 1}],
-          mode: 'payment',
-          // Do not rely on the redirect to the successUrl for fulfilling
-          // purchases, customers may not always reach the success_url after
-          // a successful payment.
-          // Instead use one of the strategies described in
-          // https://stripe.com/docs/payments/checkout/fulfill-orders
-          successUrl: window.location.protocol + '//otherworldszines.com/checkout-confirmation',
-          cancelUrl: window.location.protocol + '//otherworldszines.com/checkout-error',
-          shippingAddressCollection: {
-            allowedCountries: ['AU'],
-          }
-        })
-        .then(function (result) {
-          if (result.error) {
-            // If `redirectToCheckout` fails due to a browser or network
-            // error, display the localized error message to your customer.
-            var displayError = document.getElementById('error-message');
-            displayError.textContent = result.error.message;
-          }
-        });
-      });
-    })();
-    </script>
+<script>
+(function() {
+  var stripe = Stripe('pk_live_51HmXXKBXFuy4q8mimdr4WZeKlTJOQ9xBQo74FbYriEIqE7JpN4TUL3EATc6ufzKMtYqSPxfr3nYHLQBEtg3ke1zB00XOcpeA3r');
 
+  var checkoutButton = document.getElementById('checkout-button-price_1HtLgZBXFuy4q8miDvdzP610');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      lineItems: [{price: 'price_1HtLgZBXFuy4q8miDvdzP610', quantity: 1}],
+      mode: 'payment',
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfill-orders
+      successUrl: window.location.protocol + '//otherworldszines.com/success',
+      cancelUrl: window.location.protocol + '//otherworldszines.com/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+</script>
   </body>
 </html>
