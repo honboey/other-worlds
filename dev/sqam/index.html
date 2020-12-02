@@ -217,13 +217,13 @@ I am a Camera is a zine series by Vanessa Berry, started in 1999. This issue, fr
 
     <!-- insert footer.njk -->
 
-    <div id="error-message"></div>
+<div id="error-message"></div>
 
 <script>
 (function() {
   var stripe = Stripe('pk_live_51HmXXKBXFuy4q8mimdr4WZeKlTJOQ9xBQo74FbYriEIqE7JpN4TUL3EATc6ufzKMtYqSPxfr3nYHLQBEtg3ke1zB00XOcpeA3r');
 
-  var checkoutButton = document.getElementById('checkout-button-price_1HtLgZBXFuy4q8miDvdzP610');
+  var checkoutButton = document.getElementById('checkout-button-price_1HmY13BXFuy4q8miLG09OPmM');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
@@ -235,8 +235,11 @@ I am a Camera is a zine series by Vanessa Berry, started in 1999. This issue, fr
       // a successful payment.
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfill-orders
-      successUrl: window.location.protocol + '//otherworldszines.com/success',
-      cancelUrl: window.location.protocol + '//otherworldszines.com/canceled',
+      successUrl: window.location.protocol + '//otherworldszines.com/checkout-confirmation',
+      cancelUrl: window.location.protocol + '//otherworldszines.com/checkout-error',
+      shippingAddressCollection: {
+        allowedCountries: ['AU'],
+      }
     })
     .then(function (result) {
       if (result.error) {
@@ -249,5 +252,6 @@ I am a Camera is a zine series by Vanessa Berry, started in 1999. This issue, fr
   });
 })();
 </script>
+
   </body>
 </html>
