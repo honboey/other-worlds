@@ -2,6 +2,8 @@
 
 This is the website for the Other Worlds Zine Collective. Every May we hold an annual zine fair in Sydney. We also run quarterly postal subscription service.
 
+This website uses [hons-static-site-generator](https://github.com/honboey/hons-static-site-generator).
+
 ## General workflow
 
 All source files are placed in [/src](/src). When you run `gulp develop` these files are processed and placed into [/dev](/dev). The files in [/dev](/dev) can be read by your browser.
